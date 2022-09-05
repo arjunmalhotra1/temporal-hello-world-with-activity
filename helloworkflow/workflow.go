@@ -24,5 +24,5 @@ func Workflow(ctx workflow.Context, name string) (string, error) {
 }
 
 func Activity(ctx context.Context, name string) (string, error) {
-	return "Hello " + name, nil
+	return "Activity -- Hello " + name, nil
 }
