@@ -16,7 +16,7 @@ func main() {
 
 	defer c.Close()
 
-	w := worker.New(c, "hello-world-queue-1", worker.Options{})
+	w := worker.New(c, "hello-world-queue-1-with-Activity", worker.Options{})
 	w.RegisterWorkflow(helloworkflow.Workflow)
 	w.RegisterActivity(helloworkflow.Activity)
 	w.Run(worker.InterruptCh())
