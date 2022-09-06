@@ -17,7 +17,7 @@ func main() {
 
 	workflowOptions := client.StartWorkflowOptions{
 		ID:        "workflow-options-id-starter-main.go",
-		TaskQueue: "hello-world-queue-1",
+		TaskQueue: "hello-world-queue-1-with-Activity",
 	}
 
 	we, err := c.ExecuteWorkflow(context.Background(), workflowOptions, helloworkflow.Workflow, "string-name-to-workflow")
